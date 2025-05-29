@@ -6,6 +6,7 @@ export default class Generalt{
     constructor(generaltLista,szElem){
         this.#generaltLista=generaltLista;
         this.#szElem=szElem
+        this.megjelenit();
     }
     megjelenit(){
         let html = `<div class="visszajelzes"></div>
@@ -16,10 +17,6 @@ export default class Generalt{
                         <div class="elem" style="background-color:${this.#generaltLista[3]}"}></div>
                     </div>`;
         this.#szElem.insertAdjacentHTML("beforeend", html);
-        for (let index = 0; index < this.#generaltLista.length; index++) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [lista[i], lista[j]] = [lista[j], lista[i]]; 
-            
-        }
     }
+    
 }

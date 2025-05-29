@@ -46,7 +46,7 @@ main {
 .szinvalaszto {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 50px;
+    padding: auto;
     gap: 5px;
     cursor: grab;
 }
