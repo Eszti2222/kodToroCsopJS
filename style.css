@@ -1,0 +1,32 @@
+main{
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+div{
+    border: 1px solid lightgray;
+}
+
+.generalt .sor{
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    gap: 2vw;
+}
+
+.jateksor{
+    
+}
+
+.visszajelzes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.vElem .elem{
+    aspect-ratio: 1;
+}
