@@ -79,26 +79,59 @@ div{
     background-color: purple;
 }
 
-@media screen and (max-width:700) {
+@media screen and (max-width:700px) {
     main{
         max-width: 900px;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 15px;
     }
     .visszajelzes{
         padding: 10px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         gap: 5px;
     }
     .szinvalaszto {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        padding: 50px;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px;
         gap: 5px;
         cursor: grab;
+        max-width: 70%;
+    }
+    .szin {
+        width: 50%;
+        aspect-ratio: 1;
+    }
+}
+@media screen and (max-width:500px) {
+    main{
+        max-width: 900px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .visszajelzes{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 5px;
+    }
+    .szinvalaszto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 18px;
+        gap: 5px;
+        cursor: grab;
+        max-width: 50%;
+    }
+    .szin {
+        width: 30%;
+        aspect-ratio: 1;
     }
 }
