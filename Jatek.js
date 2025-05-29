@@ -1,6 +1,6 @@
 import JatekSor from "./JatekSor.js";
 import Generalt from "./Generalt.js";
-import { szinekLista, generaltLista, visszajelzesListaM, tippListaM } from "./adatok.js";
+import { szinekLista, generaltLista, visszajelzesListaM, tippListaM } from "./listak.js";
 //tippListaM *10
 //visszajelzesListaM *10
 
@@ -26,9 +26,12 @@ export default class Jatek {
     this.#szin4Elem = document.querySelector(".szin:nth-child(4)");
     this.#szin5Elem = document.querySelector(".szin:nth-child(5)");
     this.#szin6Elem = document.querySelector(".szin:nth-child(6)");
+    this.megjelenit()
   }
   megjelenit() {
-    let html = ``
+    for (let index = 0; index < 10; index++) {
+        new JatekSor(this.#visszajelzesListaM[index], this.#tippListaM[index], this.#jatekter)
+    }
   }
   generaltListaEloallit() {}
   szin1Esemenykezelo() {}
