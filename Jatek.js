@@ -48,13 +48,12 @@ export default class Jatek {
   generaltListaEloallit() {
     //4véletlen szín a listából
     while (this.#generaltLista.length < 4) {
-        let veletlen = Math.floor(Math.random()*6)
-        let aktSzin = this.#szinekLista[veletlen]
-        if (this.#generaltLista.indexOf(aktSzin) < 0) {
-            this.#generaltLista.push(aktSzin)
-        }
+      let veletlen = Math.floor(Math.random() * 6);
+      let aktSzin = this.#szinekLista[veletlen];
+      if (this.#generaltLista.indexOf(aktSzin) < 0) {
+        this.#generaltLista.push(aktSzin);
+      }
     }
-    
   }
 
   szin1Esemenykezelo() {}
