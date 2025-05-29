@@ -13,7 +13,7 @@ export const visszajelzesListaM = [
     ["gray","gray","gray","gray"]
 ];
 export const tippListaM = [
-    ["white","ezt","white","white"]
+    ["white","white","white","white"],
     ["white","white","white","white"],
     ["white","white","white","white"],
     ["white","white","white","white"],
