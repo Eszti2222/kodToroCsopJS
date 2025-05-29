@@ -1,9 +1,9 @@
 export default class Visszajelzes{
     #visszajelzesLista = [];
   #szElem;
-  constructor(tippLista) {
-    this.#visszajelzesLista = tippLista;
-    this.#szElem = document.querySelector(".jatekter .jateksor .sor .elem");
+  constructor(visszajelzesLista) {
+    this.#visszajelzesLista = visszajelzesLista;
+    this.#szElem = document.querySelector(".jatekter .jateksor .visszajelzes .elem");
     this.#megjelenit();
   }
 
