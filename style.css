@@ -10,7 +10,7 @@ main {
     gap: 2vw;
 }
 
-div {
+.bal, .jobb {
     border: 1px solid lightgray;
 }
 
@@ -40,6 +40,7 @@ div {
 .elem {
     aspect-ratio: 1;
     border: 1px solid lightgray;
+    
 }
 
 .szinvalaszto {
