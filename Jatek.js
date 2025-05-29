@@ -34,8 +34,11 @@ export default class Jatek {
     }
     new Generalt(this.#generaltLista)
   }
-  generaltListaEloallit() {}
-  szin1Esemenykezelo() {}
+  generaltListaEloallit() {
+  }
+  szin1Esemenykezelo() {
+    
+  }
   szin2Esemenykezelo() {}
   szin3Esemenykezelo() {}
   szin4Esemenykezelo() {}
