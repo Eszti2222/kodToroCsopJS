@@ -1,19 +1,20 @@
 export default class Visszajelzes {
   #visszajelzesLista = [];
   #szElem;
-  constructor(visszajelzesLista) {
+  constructor(visszajelzesLista, szElem) {
     this.#visszajelzesLista = visszajelzesLista;
-    this.#szElem = document.querySelector(
-      ".jatekter .jateksor .visszajelzes .elem"
-    );
+    this.#szElem = szElem;
     this.#megjelenit();
   }
 
   #megjelenit() {
-    this.#szElem.innerHTML = "";
-    for (let index = 0; index < this.#visszajelzesLista.length; index++) {
-      const element = this.#visszajelzesLista[index];
-      this.#szElem.insertAdjacentHTML("beforeend", element);
-    }
+    let html = `</div><div class="visszajelzes">
+                  <div class="vElem" STYLE="background-color:${this.#visszajelzesLista[0]}"}></div>
+                  <div class="vElem" STYLE="background-color:${this.#visszajelzesLista[1]}"}></div>
+                  <div class="vElem" STYLE="background-color:${this.#visszajelzesLista[2]}"}></div>
+                  <div class="vElem" STYLE="background-color:${this.#visszajelzesLista[3]}"}></div>
+                </div>`;
+
+    this.#szElem.insertAdjacentHTML("beforeend", html);
   }
 }

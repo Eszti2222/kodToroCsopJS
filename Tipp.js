@@ -1,17 +1,20 @@
 export default class Tipp {
   #tippLista = [];
   #szElem;
-  constructor(tippLista) {
+  constructor(tippLista, szElem) {
     this.#tippLista = tippLista;
-    this.#szElem = document.querySelector(".jatekter .jateksor .sor .elem");
+    this.#szElem = szElem;
     this.#megjelenit();
   }
 
   #megjelenit() {
-    this.#szElem.innerHTML = "";
-    for (let index = 0; index < this.#tippLista.length; index++) {
-      const element = this.#tippLista[index];
-      this.#szElem.insertAdjacentHTML("beforeend", element);
-    }
+    let html = `<div class="sor">
+                  <div class="elem" STYLE="background-color:${this.#tippLista[0]}"}></div>
+                  <div class="elem" STYLE="background-color:${this.#tippLista[1]}"}></div>
+                  <div class="elem" STYLE="background-color:${this.#tippLista[2]}"}></div>
+                  <div class="elem" STYLE="background-color:${this.#tippLista[3]}"}></div>
+                </div>`;
+
+    this.#szElem.insertAdjacentHTML("beforeend", html);
   }
 }
