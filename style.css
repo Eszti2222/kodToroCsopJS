@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 main{
     max-width: 900px;
     margin: auto;
@@ -11,16 +15,21 @@ div{
 }
 
 .generalt .sor{
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(4 1fr);
     gap: 2vw;
 }
 
 .jateksor{
-    
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    border: 1px solid lightgray;
 }
 
 .visszajelzes{
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -29,4 +38,5 @@ div{
 
 .vElem .elem{
     aspect-ratio: 1;
+    border: 1px solid lightgray;
 }
