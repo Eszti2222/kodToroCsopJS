@@ -1,11 +1,10 @@
 //generaltLista
-import { szinekLista } from "./listak.js";
 export default class Generalt{
     #generaltLista=[];
     #szElem;
-    constructor(generaltLista,szElem){
+    constructor(generaltLista){
         this.#generaltLista=generaltLista;
-        this.#szElem=szElem
+        this.#szElem=document.querySelector(".generalt .jateksor")
         this.megjelenit();
     }
     megjelenit(){

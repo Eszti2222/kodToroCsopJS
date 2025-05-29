@@ -32,6 +32,7 @@ export default class Jatek {
     for (let index = 0; index < 10; index++) {
         new JatekSor(this.#tippListaM[index], this.#visszajelzesListaM[index], this.#jatekter)
     }
+    new Generalt(this.#generaltLista)
   }
   generaltListaEloallit() {}
   szin1Esemenykezelo() {}
