@@ -5,10 +5,10 @@ import { szinekLista, generaltLista, visszajelzesListaM, tippListaM } from "./li
 //visszajelzesListaM *10
 
 export default class Jatek {
-  #szinekLista = [];
-  #generaltLista = [];
-  #visszajelzesListaM = [];
-  #tippListaM = [];
+  #szinekLista = szinekLista;
+  #generaltLista = generaltLista;
+  #visszajelzesListaM = visszajelzesListaM;
+  #tippListaM = tippListaM;
   #jatekter;
   #sor = 0;
   #oszlop = 0;
@@ -30,7 +30,7 @@ export default class Jatek {
   }
   megjelenit() {
     for (let index = 0; index < 10; index++) {
-        new JatekSor(this.#visszajelzesListaM[index], this.#tippListaM[index], this.#jatekter)
+        new JatekSor(this.#tippListaM[index], this.#visszajelzesListaM[index], this.#jatekter)
     }
   }
   generaltListaEloallit() {}

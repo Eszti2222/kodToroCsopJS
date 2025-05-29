@@ -1,2 +1,2 @@
 import Jatek from "./Jatek.js";
-new Jatek();
+new Jatek()
