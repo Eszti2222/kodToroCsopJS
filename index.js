@@ -1,1 +1,1 @@
-import JatekTe from "./Jatek.js";
+import Jatek from "./Jatek.js";
