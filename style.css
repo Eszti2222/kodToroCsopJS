@@ -49,6 +49,12 @@ div{
     cursor: grab;
 }
 
+.szin{
+    aspect-ratio: 1;
+    border: 1px solid lightgray;
+    cursor: grab;
+}
+
 .szin:nth-child(1){
     background-color: red;
 }
