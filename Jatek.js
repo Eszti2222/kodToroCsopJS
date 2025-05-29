@@ -4,5 +4,4 @@ import Generalt from "./Generalt.js";
 //visszajelzesListaM *10
 
 export default class Jatek{
-    
 }
