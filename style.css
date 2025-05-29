@@ -6,19 +6,19 @@ main{
     max-width: 900px;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 2fr 1fr;
+    gap: 2vw;
 }
 
 div{
     border: 1px solid lightgray;
 }
 
-.generalt .sor{
+.sor, generalt{
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(4 1fr);
-    gap: 2vw;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
 }
 
 .jateksor{
@@ -31,7 +31,7 @@ div{
 .visszajelzes{
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 5px;
 }
