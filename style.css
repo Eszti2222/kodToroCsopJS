@@ -72,3 +72,27 @@ div{
 .szin:nth-child(6){
     background-color: purple;
 }
+
+@media screen and (max-width:700) {
+    main{
+        max-width: 900px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .visszajelzes{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 5px;
+    }
+    .szinvalaszto {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding: 50px;
+        gap: 5px;
+        cursor: grab;
+    }
+}
