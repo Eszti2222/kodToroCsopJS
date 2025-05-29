@@ -2,25 +2,23 @@ import Tipp from "./Tipp.js";
 import Visszajelzes from "./Visszajelzes.js";
 /*pédányosítsa a TIPP és VIsszajelzés oszt a megfelelo listával */
 export default class JatekSor {
-  #tippLista = [];
-  #visszajelzesLista = [];
+  #tippListaM = [];
+  #visszajelzesListaM = [];
   #szElem;
-  constructor(tippLista, visszajelzesLista, szElem) {
-    this.#tippLista = tippLista;
-    this.#visszajelzesLista = visszajelzesLista;
+  constructor(tippListaM, visszajelzesListaM, szElem) {
+    this.#tippListaM = tippListaM;
+    this.#visszajelzesListaM = visszajelzesListaM;
     this.#szElem =szElem;
     this.#megjelenit();
 
   }
   #megjelenit() {
-    let html = `
-                 <div class="jateksor"></div>
-        `;
+    let html = `<div class="jateksor"></div>`;
 
       this.#szElem.insertAdjacentHTML("beforeend", html);
       this.sorSzuloElem= document.querySelector(".jateksor:last-child");
-      new Visszajelzes(this.#visszajelzesLista,this.sorSzuloElem)
-      new Tipp(this.#tippLista,this.sorSzuloElem)
+      new Visszajelzes(this.#visszajelzesListaM, this.sorSzuloElem)
+      new Tipp(this.#tippListaM, this.sorSzuloElem)
     
   }
 }
